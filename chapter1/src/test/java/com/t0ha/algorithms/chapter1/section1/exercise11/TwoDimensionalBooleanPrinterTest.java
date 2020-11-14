@@ -7,7 +7,7 @@ import static com.t0ha.algorithms.chapter1.section1.exercise11.TwoDimensionalBoo
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class TwoDimensionalBooleanPrinterTests {
+class TwoDimensionalBooleanPrinterTest {
     @Test
     void starOrSpace_areGeneratedForEachElement() {
         //given

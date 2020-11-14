@@ -9,7 +9,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 class ParenthesesTest {
     @ParameterizedTest
     @ValueSource(strings = "[()]{}{[()()]()}")
-    void true_isReturned_whenBalanced(String seq) {
+    void trueIsReturned_whenBalanced(String seq) {
         //given
         Parentheses parentheses = new Parentheses();
         //when
@@ -22,7 +22,7 @@ class ParenthesesTest {
 
     @ParameterizedTest
     @ValueSource(strings = { "[(])", "[({)}]" })
-    void false_isReturned_whenNotBalanced(String seq) {
+    void falseIsReturned_whenNotBalanced(String seq) {
         //given
         Parentheses parentheses = new Parentheses();
         //when
