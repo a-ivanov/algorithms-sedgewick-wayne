@@ -15,6 +15,7 @@ class QueueReverseOrderTest {
         q.enqueue("1");
         q.enqueue("2");
         q.enqueue("3");
+        assertThat(q, contains("1", "2", "3"));
         //when
         Stack<String> stack = new Stack<>();
         while (!q.isEmpty())
