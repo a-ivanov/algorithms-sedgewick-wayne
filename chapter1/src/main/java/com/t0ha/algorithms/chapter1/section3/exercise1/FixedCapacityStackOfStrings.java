@@ -8,8 +8,8 @@ public class FixedCapacityStackOfStrings {
         this.a = new String[cap];
     }
 
-    public void push(String item) {
-        a[n++] = item;
+    public void push(String str) {
+        a[n++] = str;
     }
 
     public String pop() {
