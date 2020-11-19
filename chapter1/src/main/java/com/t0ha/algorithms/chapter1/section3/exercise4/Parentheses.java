@@ -15,6 +15,10 @@ public class Parentheses {
         else if ('}' == c) determine('{');
     }
 
+    public boolean areBalanced() {
+        return balanced;
+    }
+
     private boolean isOpening(char par) {
         return OPENING.indexOf(par) >= 0;
     }
@@ -22,9 +26,5 @@ public class Parentheses {
     private void determine(char balancing) {
         char par = pars.pop();
         balanced = balanced && par == balancing;
-    }
-
-    public boolean areBalanced() {
-        return balanced;
     }
 }
