@@ -1,6 +1,6 @@
 package com.t0ha.algorithms.chapter1.section3.exercise19;
 
-public class LastNodeDeletion {
+public class LastNodeDeleter {
     public static class Node {
         private static final Node LAST_NODE = new Node(null);
 
